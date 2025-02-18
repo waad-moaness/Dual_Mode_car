@@ -55,7 +55,7 @@ void setup() {
   rotateMotor(0, 0);
 
   //attach interrupt for button's mode
-  // triggers the ISR_btn() whenever the state of MODE_BUTTON changes
+  // triggers the ISR_btn() whenever the MODE_BUTTON is pressed
   attachInterrupt(digitalPinToInterrupt(MODE_BUTTON), ISR_btn, RISING);
 }
 
