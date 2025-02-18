@@ -56,7 +56,7 @@ void setup() {
 
   //attach interrupt for button's mode
   // triggers the ISR_btn() whenever the state of MODE_BUTTON changes
-  attachInterrupt(digitalPinToInterrupt(MODE_BUTTON), ISR_btn, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(MODE_BUTTON), ISR_btn, RISING);
 }
 
 void loop() {
